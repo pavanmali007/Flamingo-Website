@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(195, 195, 195);
+}
+
+#container {
+    background-image: linear-gradient(#020024, #08086b, #026285);
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+#content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid wheat; */
+    width: 70%;
+    height: 100%;
+    opacity: 0.9;
+    /* padding: 25px 35px; */
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 25px;
+
+}
+
+nav{
+    width: 95%;
+    height: 10%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+    margin-bottom: 15px;
+    padding: 5px 20px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(61, 253, 253);
+    opacity: 0.75;
+    font-size: 14px;
+}
+
+nav h2{
+    cursor: pointer;
+}
+
+nav a:nth-child(2){
+    font-size: 16px;
+    opacity: 0.9;
+    border-bottom: 2px solid rgb(190, 190, 190);
+    padding-bottom: 2px;
+}
+
+#circle{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-image: url("Assets/xander-ashwell-bhTjAUHHvSg-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+}
+
+#smcircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 320px;
+    background-color: #030369 ;
+    border-radius: 50%;
+}
+
+#smcircle img{
+    position: absolute;
+    top: 12%;
+    left: -35%;
+    width: 400px;
+}
+
+#vsmcircle{
+    position: absolute;
+    top: 50%;
+    right: -2.5%;
+    transform: translate(0, -50%);
+    width: 62px;
+    height: 62px;
+    background-image: url("Assets/beautiful-flamingos-walking-water-green-600nw-2149276071.webp");
+    opacity: 0.9;
+    background-size: 70px 60px;
+    border: 2px solid rgba(255, 255, 255, 0.836);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+#vsmcircle i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    
+}
+
+#cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #030369;
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    color: rgb(234, 231, 217);
+    cursor: pointer;
+}
+
+
+#sideDiv {
+    width: 30%;
+    height: 100%;
+    background-color: #1212128b;
+    opacity: 0.9;
+    border: 0.5px solid rgb(100, 100, 100);
+    border-radius: 7px;
+    padding: 15px 20px;
+
+
+}
+
+#searchbar{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: rgb(222, 222, 222);
+    background-color: #383838c2;
+    opacity: 0.9;
+
+}
+
+#article{
+    margin: 5px 0;
+    font-weight: 350;
+}
+
+#todays_pic{
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+    background-color: #222;
+    background-image: url("Assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 7px;
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+
+#space{
+    margin: 10px 0;
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 7px;
+}
+
+#playlist_name{
+    margin: 2px 0;
+    font-weight: 350;
+    font-size: 18px;
+
+}
+
+#list{
+    width: 100%;
+    height: auto;
+    /* background-color: rgba(173, 173, 173, 0.788); */
+    margin: 2px 0;
+    padding: 2x 0;
+    border-radius: 7px;
+}
+
+.plates{
+    padding: 7px 3px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 7px 0;
+    /* background-color: #02628525; */
+    border: none;
+    border-radius: 7px;
+
+}
+
+.plates:hover{
+    background-color: #02628525;
+
+}
+
+.time{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 28%;
+    padding-left: 5px;
+    height: auto;
+}
+
+.details{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 72%;
+    height: auto;
+}
+
+.details h4, sup{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.details h4{
+    font-size: ;
+    font-weight: 350;
+    
+}
+
+.details sup{
+    font-weight: 200;
+}
+
+
+
+
+
+
